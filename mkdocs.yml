@@ -1,0 +1,22 @@
+site_name: "DECADE-X Standards"
+site_url: "https://shibukawa310.github.io/dx_standards/"
+
+theme:
+  name: material
+
+nav:
+  - Accueil: index.md
+  - Standards:
+      - "AX-001: Cereals": AX-001.md
+
+# Les extensions pour que tout fonctionne comme avant
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.snippets:
+      base_path: ["includes"]
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - macros # C'est ce qui remplace "process_jinja" pour les {{ }}
