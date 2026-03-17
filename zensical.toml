@@ -9,13 +9,6 @@ site_url = "https://shibukawa310.github.io/dx_standards/"
 # Using the default material theme
 name = "material"
 
-[project.nav]
-# Adding our first standard to the menu
-"Home" = "index.md"
-"Standards" = [
-    {"AX-001: Cereals" = "AX-001.md"} 
-]
-
 # --- NEW: MARKDOWN EXTENSIONS ---
 [project.markdown_extensions]
 admonition = {} # Enables warning/info blocks (!!! info)
