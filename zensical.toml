@@ -3,7 +3,7 @@
 site_name = "DECADE-X Standards"
 
 # The base URL of your GitHub Pages site (Case-sensitive)
-site_url = "https://decade-x-dataspace.github.io/decade-x-standards/"
+site_url = "https://Shibukawa310.github.io/dx_standards/"
 
 [project.theme]
 # Using the default material theme without any advanced features yet
