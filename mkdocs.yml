@@ -4,22 +4,16 @@ site_url: "https://shibukawa310.github.io/dx_standards/"
 theme:
   name: material
 
+# --- AJOUT DU DOSSIER D'INCLUSION ---
+plugins:
+  - search
+  - macros:
+      include_dir: includes  # On dit au plugin de regarder ici
+
 extra_css:
   - assets/custom.css
 
-nav:
-  - Accueil: index.md
-  - Standards:
-      - "AX-001: Cereals": AX-001.md
-
-# Les extensions pour que tout fonctionne comme avant
 markdown_extensions:
   - admonition
   - attr_list
-  - pymdownx.snippets:
-      base_path: ["includes"]
   - pymdownx.superfences
-
-plugins:
-  - search
-  - macros # C'est ce qui remplace "process_jinja" pour les {{ }}
