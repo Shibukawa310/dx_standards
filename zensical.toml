@@ -5,5 +5,18 @@ site_url = "https://shibukawa310.github.io/dx_standards/"
 [project.theme]
 name = "material"
 
-# J'ai retiré le [project.nav] exprès. Zensical va scanner "docs/" tout seul.
-# J'ai aussi retiré les extensions Markdown temporairement.
+# --- LE MENU (Sécurisé) ---
+[project.nav]
+"Accueil" = "index.md"
+"Standards" = [
+    { "AX-001: Cereals" = "AX-001.md" }
+]
+
+# --- LES EXTENSIONS ---
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+
+[project.markdown_extensions.pymdownx.snippets]
+base_path = "includes"
+process_jinja = true
