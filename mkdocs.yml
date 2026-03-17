@@ -4,6 +4,9 @@ site_url: "https://shibukawa310.github.io/dx_standards/"
 theme:
   name: material
 
+extra_css:
+  - assets/custom.css
+
 nav:
   - Accueil: index.md
   - Standards:
