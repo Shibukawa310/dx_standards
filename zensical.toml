@@ -10,7 +10,7 @@ site_url = "https://Shibukawa310.github.io/dx_standards/"
 name = "material"
 
 [project.nav]
- Adding our first standard to the menu
+# Adding our first standard to the menu
 "Home" = "index.md"
 "Standards" = [
     {"AX-001: Cereals" = "AX-001.md"}
