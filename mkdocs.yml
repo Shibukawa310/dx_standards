@@ -25,7 +25,13 @@ plugins:
   - tags         # Permet d'ajouter des mots-clés dans le frontmatter
   - macros:      # On garde notre plugin de variables qui fonctionne
       include_dir: includes
+  - awesome-pages
 
+nav:
+  - 'Active': 'active/'        # Il va aspirer tout ce qu'il y a dans docs/active/
+  - 'Deprecated': 'deprecated/'
+  - 'Retired': 'retired/'
+  
 markdown_extensions:
   - admonition
   - pymdownx.details
