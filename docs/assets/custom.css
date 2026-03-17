@@ -1,4 +1,3 @@
-/* Style de base pour les tags de statut */
 .status-tag {
     padding: 2px 8px;
     border-radius: 4px;
@@ -7,9 +6,5 @@
     text-transform: uppercase;
     font-size: 0.85em;
 }
-
-/* Couleurs dynamiques */
 .status-active { background-color: #28a745; }
 .status-retired { background-color: #dc3545; }
-.status-draft { background-color: #ffc107; color: #212529; }
-.status-candidate { background-color: #17a2b8; }
