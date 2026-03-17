@@ -13,7 +13,7 @@ name = "material"
 # Adding our first standard to the menu
 "Home" = "index.md"
 "Standards" = [
-    {"AX-001: Cereals" = "docs/AX-001.md"}
+    {"AX-001: Cereals" = "AX-001.md"} # <-- J'ai retiré le "docs/" ici
 ]
 
 # --- NEW: MARKDOWN EXTENSIONS ---
