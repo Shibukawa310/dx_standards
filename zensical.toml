@@ -1,21 +1,9 @@
 [project]
-# The official name of your documentation site
 site_name = "DECADE-X Standards"
-
-# The base URL of your GitHub Pages site (tout en minuscules par sécurité)
 site_url = "https://shibukawa310.github.io/dx_standards/"
 
 [project.theme]
-# Using the default material theme
 name = "material"
 
-# --- NEW: MARKDOWN EXTENSIONS ---
-[project.markdown_extensions]
-admonition = {} # Enables warning/info blocks (!!! info)
-attr_list = {}  # Enables inline CSS styling
-
-[project.markdown_extensions.pymdownx.snippets]
-# Directory where the reusable blocks are stored
-base_path = "includes"
-# CRITICAL: Allows the snippet to read Front Matter variables (like {{ page.meta.ID }})
-process_jinja = true
+# J'ai retiré le [project.nav] exprès. Zensical va scanner "docs/" tout seul.
+# J'ai aussi retiré les extensions Markdown temporairement.
