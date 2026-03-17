@@ -2,13 +2,27 @@
 # The official name of your documentation site
 site_name = "DECADE-X Standards"
 
-# The base URL of your GitHub Pages site (Case-sensitive)
-site_url = "https://Shibukawa310.github.io/dx_standards/"
+# The base URL of your GitHub Pages site
+site_url = "https://decade-x-dataspace.github.io/decade-x-standards/"
 
 [project.theme]
-# Using the default material theme without any advanced features yet
+# Using the default material theme
 name = "material"
 
 [project.nav]
-# Minimal navigation mapping
+# Adding our first standard to the menu
 "Home" = "index.md"
+"Standards" = [
+    {"AX-001: Cereals" = "AX-001.md"}
+]
+
+# --- NEW: MARKDOWN EXTENSIONS ---
+[project.markdown_extensions]
+admonition = {} # Enables warning/info blocks (!!! info)
+attr_list = {}  # Enables inline CSS styling
+
+[project.markdown_extensions.pymdownx.snippets]
+# Directory where the reusable blocks are stored
+base_path = "includes"
+# CRITICAL: Allows the snippet to read Front Matter variables (like {{ page.meta.ID }})
+process_jinja = true
