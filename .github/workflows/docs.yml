@@ -1,11 +1,10 @@
-name: Build and Deploy Documentation
+name: Build and Deploy MkDocs
 
 on:
   push:
     branches:
-      - main # Trigger the workflow on pushes to the main branch
+      - main
 
-# Grant necessary permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
@@ -26,12 +25,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install Zensical
-        run: pip install zensical
+      - name: Install MkDocs Material and Macros
+        # On installe le thème et le plugin de variables
+        run: pip install mkdocs-material mkdocs-macros-plugin
 
       - name: Build site
-        # This command generates the static HTML files into the 'site' directory
-        run: zensical build
+        run: mkdocs build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
